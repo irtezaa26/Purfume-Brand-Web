@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Sellers | IRTEZÉ Perfumes</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="best-sellers.css">
+</head>
+<body>
+
+<header style="background:#0b0b0b; border-bottom:1px solid #c9a96e;">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html"
+               style="color:#c9a96e; font-size:28px; letter-spacing:4px;">
+                IRTEZÉ
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#irtezeNavbar"
+                    aria-controls="irtezeNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    style="border-color:#c9a96e;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="irtezeNavbar">
+                <ul class="navbar-nav mx-auto gap-lg-3 text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="men.html">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="women.html">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="unisex.html">Unisex</a></li>
+                    <li class="nav-item"><a class="nav-link" href="new-arrivals.html">New Arrivals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sale.html">Sale</a></li>
+                </ul>
+
+                <div class="d-flex justify-content-center align-items-center gap-3 mt-3 mt-lg-0">
+                    <a href="shop.html" aria-label="Search"
+                       style="color:#c9a96e; font-size:21px;">
+                        <i class="bi bi-search"></i>
+                    </a>
+
+                    <a href="wishlist.html" aria-label="Wishlist"
+                       style="color:#c9a96e; font-size:21px; text-decoration:none;">
+                        <i class="bi bi-heart"></i>
+                        <span id="wishlistCount" style="font-size:12px;">0</span>
+                    </a>
+
+                 <a href="cart.html" class="irteze-cart" aria-label="Shopping cart">
+    <i class="bi bi-cart3"></i>
+    <span id="cartCount">0</span>
+</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <section class="bestseller-hero">
+        <div class="container">
+            <p class="eyebrow">LOVED BY MANY</p>
+            <h1>Best Sellers<span>.</span></h1>
+            <p>
+                Discover the fragrances our customers return to,
+                chosen for their distinctive character and lasting impression.
+            </p>
+            <a href="#popular-products" class="gold-button">Shop the Favorites</a>
+        </div>
+    </section>
+
+    <section class="intro-section">
+        <div class="container">
+            <span class="section-label">THE CUSTOMER FAVORITES</span>
+            <h2>Popular for a <em>Reason.</em></h2>
+            <p>
+                From rich woody notes to delicate florals, explore the scents
+                that have earned a special place in our collection.
+            </p>
+        </div>
+    </section>
+
+    <section class="products-section" id="popular-products">
+        <div class="container">
+
+            <div class="products-heading">
+                <div>
+                    <span class="section-label">MOST WANTED</span>
+                    <h2>Our Best Sellers</h2>
+                </div>
+                <span class="product-total">6 Fragrances</span>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">BEST SELLER</span>
+                            <img src="image5.png" alt="Noir Essence perfume">
+                            <button class="quick-add" data-id="bs1" data-name="Noir Essence" data-price="4500">Add to Bag +</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">MEN'S FRAGRANCE</span>
+                            <h3>Noir Essence</h3>
+                            <p class="product-description">Bold woody notes with a deep, elegant finish.</p>
+                            <div class="product-bottom">
+                                <span class="product-price">Rs. 4,500</span>
+                                <a href="product-details.html" class="view-product">Discover ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">BEST SELLER</span>
+                            <img src="image6.png" alt="Velvet Bloom perfume">
+                            <button class="quick-add" data-id="bs2" data-name="Velvet Bloom" data-price="5200">Add to Bag +</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">WOMEN'S FRAGRANCE</span>
+                            <h3>Velvet Bloom</h3>
+                            <p class="product-description">A graceful floral fragrance with a soft finish.</p>
+                            <div class="product-bottom">
+                                <span class="product-price">Rs. 5,200</span>
+                                <a href="product-details.html" class="view-product">Discover ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">BEST SELLER</span>
+                            <img src="image7.png" alt="Amber Veil perfume">
+                            <button class="quick-add" data-id="bs3" data-name="Amber Veil" data-price="4800">Add to Bag +</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">UNISEX FRAGRANCE</span>
+                            <h3>Amber Veil</h3>
+                            <p class="product-description">Warm amber notes balanced with gentle musk.</p>
+                            <div class="product-bottom">
+                                <span class="product-price">Rs. 4,800</span>
+                                <a href="product-details.html" class="view-product">Discover ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">FAN FAVORITE</span>
+                            <img src="image8.png" alt="Oud Reserve perfume">
+                            <button class="quick-add" data-id="bs4" data-name="Oud Reserve" data-price="6200">Add to Bag +</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">MEN'S FRAGRANCE</span>
+                            <h3>Oud Reserve</h3>
+                            <p class="product-description">Rich oud with a confident, luxurious character.</p>
+                            <div class="product-bottom">
+                                <span class="product-price">Rs. 6,200</span>
+                                <a href="product-details.html" class="view-product">Discover ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">FAN FAVORITE</span>
+                            <img src="image9.png" alt="Rose Allure perfume">
+                            <button class="quick-add" data-id="bs5" data-name="Rose Allure" data-price="3900">Add to Bag +</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">WOMEN'S FRAGRANCE</span>
+                            <h3>Rose Allure</h3>
+                            <p class="product-description">Fresh rose petals with a timeless floral feel.</p>
+                            <div class="product-bottom">
+                                <span class="product-price">Rs. 3,900</span>
+                                <a href="product-details.html" class="view-product">Discover ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">FAN FAVORITE</span>
+                            <img src="image10.png" alt="Golden Hour perfume">
+                            <button class="quick-add" data-id="bs6" data-name="Golden Hour" data-price="5500">Add to Bag +</button>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">UNISEX FRAGRANCE</span>
+                            <h3>Golden Hour</h3>
+                            <p class="product-description">Smooth, warm notes for an effortlessly refined scent.</p>
+                            <div class="product-bottom">
+                                <span class="product-price">Rs. 5,500</span>
+                                <a href="product-details.html" class="view-product">Discover ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="signature-section">
+        <div class="container">
+            <span class="section-label">FIND YOUR FAVORITE</span>
+            <h2>Your Next Favorite Is <em>Waiting.</em></h2>
+            <p>Explore the full IRTEZÉ collection and discover a scent that feels like you.</p>
+            <a href="shop.html" class="gold-button">Explore All Fragrances</a>
+        </div>
+    </section>
+
+</main>
+
+<footer style="background:#0b0b0b; color:#f5f0e8; border-top:1px solid #c9a96e; padding:50px 0 20px;">
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+                <h3 style="color:#c9a96e; letter-spacing:4px;">IRTEZÉ</h3>
+                <p style="color:#aaa39a;">A Signature Beyond Scent.</p>
+                <p style="color:#aaa39a;">
+                    Discover fragrances that express your personality
+                    and leave a lasting impression.
+                </p>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <h5 style="color:#c9a96e;">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html" style="color:#aaa39a; text-decoration:none;">Home</a></li>
+                    <li class="mb-2"><a href="shop.html" style="color:#aaa39a; text-decoration:none;">Shop</a></li>
+                    <li class="mb-2"><a href="about.html" style="color:#aaa39a; text-decoration:none;">About Us</a></li>
+                    <li class="mb-2"><a href="contact.html" style="color:#aaa39a; text-decoration:none;">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 style="color:#c9a96e;">Customer Care</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="cart.html" style="color:#aaa39a; text-decoration:none;">Shopping Bag</a></li>
+                    <li class="mb-2"><a href="wishlist.html" style="color:#aaa39a; text-decoration:none;">My Wishlist</a></li>
+                    <li class="mb-2"><a href="checkout.html" style="color:#aaa39a; text-decoration:none;">Checkout</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 style="color:#c9a96e;">Get in Touch</h5>
+                <p style="color:#aaa39a; margin-bottom:8px;">
+                    <i class="bi bi-envelope me-2"></i> your-email@example.com
+                </p>
+                <p style="color:#aaa39a;">
+                    <i class="bi bi-telephone me-2"></i> +92 XXX XXXXXXX
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="#" aria-label="Instagram" style="color:#c9a96e; font-size:20px;"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="Facebook" style="color:#c9a96e; font-size:20px;"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="TikTok" style="color:#c9a96e; font-size:20px;"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr style="border-color:#444; margin-top:35px;">
+
+        <div class="text-center" style="color:#aaa39a; font-size:14px;">
+            &copy; <span id="footerYear"></span> IRTEZÉ. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+$(function () {
+    function updateCartCount() {
+        let cart = JSON.parse(localStorage.getItem("irtezeCart")) || [];
+        let count = cart.reduce(function (total, item) {
+            return total + Number(item.quantity || 1);
+        }, 0);
+
+        $(".cart-count").text(count);
+    }
+
+    $(".menu-toggle").on("click", function () {
+        $(".navigation").toggleClass("show-menu");
+        $(this).toggleClass("open");
+    });
+
+    $(".quick-add").on("click", function () {
+        let id = String($(this).data("id"));
+        let name = $(this).data("name");
+        let price = Number($(this).data("price"));
+        let cart = JSON.parse(localStorage.getItem("irtezeCart")) || [];
+        let existing = cart.find(function (item) {
+            return String(item.id) === id;
+        });
+
+        if (existing) {
+            existing.quantity = Number(existing.quantity || 1) + 1;
+        } else {
+            cart.push({
+                id: id,
+                name: name,
+                price: price,
+                quantity: 1
+            });
+        }
+
+        localStorage.setItem("irtezeCart", JSON.stringify(cart));
+        updateCartCount();
+
+        let button = $(this);
+        button.text("Added ✓");
+
+        setTimeout(function () {
+            button.text("Add to Bag +");
+        }, 1200);
+    });
+
+    $("#currentYear").text(new Date().getFullYear());
+    updateCartCount();
+});
+</script>
+<style>
+/* HEADER */
+header {
+    background: #0b0b0b;
+    border-bottom: 1px solid rgba(201, 169, 110, 0.35);
+}
+
+header .navbar {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+header .navbar-brand {
+    color: #c9a96e !important;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    transition: color 0.3s ease;
+}
+
+header .navbar-brand:hover {
+    color: #f5f0e8 !important;
+}
+
+/* NAV LINKS */
+header .navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    color: #f5f0e8 !important;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    padding: 10px 0 !important;
+    margin: 0 9px;
+    transition: color 0.3s ease;
+}
+
+header .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 0;
+    height: 2px;
+    background: #c9a96e;
+    transition: width 0.3s ease;
+}
+
+header .navbar-nav .nav-link:hover,
+header .navbar-nav .nav-link:focus,
+header .navbar-nav .nav-link.active {
+    color: #c9a96e !important;
+}
+
+header .navbar-nav .nav-link:hover::after,
+header .navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+/* SEARCH, WISHLIST AND CART ICONS */
+header a[aria-label="Search"],
+header a[aria-label="Wishlist"],
+header a[aria-label="Shopping cart"] {
+    color: #c9a96e !important;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header a[aria-label="Search"]:hover,
+header a[aria-label="Wishlist"]:hover,
+header a[aria-label="Shopping cart"]:hover {
+    color: #f5f0e8 !important;
+    transform: translateY(-2px);
+}
+
+/* MOBILE MENU */
+header .navbar-toggler {
+    border: 1px solid #c9a96e;
+    box-shadow: none !important;
+}
+
+header .navbar-toggler:focus {
+    box-shadow: 0 0 0 2px rgba(201, 169, 110, 0.2) !important;
+}
+
+@media (max-width: 991px) {
+    header .navbar-collapse {
+        padding-top: 18px;
+    }
+
+    header .navbar-nav .nav-link {
+        margin: 4px 0;
+    }
+
+    header .navbar-nav .nav-link::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header .navbar-nav .nav-link:hover::after,
+    header .navbar-nav .nav-link.active::after {
+        width: 35px;
+    }
+}
+
+/* FOOTER */
+footer {
+    background: #0b0b0b !important;
+    color: #f5f0e8;
+    border-top: 1px solid rgba(201, 169, 110, 0.4);
+}
+
+footer h3,
+footer h5 {
+    color: #c9a96e !important;
+    margin-bottom: 18px;
+}
+
+footer p {
+    line-height: 1.8;
+}
+
+footer a {
+    color: #aaa39a !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #c9a96e !important;
+}
+
+footer .bi-instagram,
+footer .bi-facebook,
+footer .bi-tiktok {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover .bi-instagram,
+footer a:hover .bi-facebook,
+footer a:hover .bi-tiktok {
+    color: #f5f0e8;
+}
+
+footer hr {
+    border-color: rgba(201, 169, 110, 0.3) !important;
+}
+
+footer #footerYear {
+    color: #c9a96e;
+}
+.irteze-cart {
+width: 45px;
+height: 45px;
+display: inline-flex;
+
+
+align-items: center;
+justify-content: center;
+gap: 5px;
+color: #c9a96e !important;
+border: 1px solid rgba(201, 169, 110, 0.55);
+border-radius: 50%;
+text-decoration: none !important;
+transition: all 0.3s ease;
+}
+
+.irteze-cart i {
+font-size: 19px;
+}
+
+.irteze-cart #cartCount {
+font-size: 11px;
+font-weight: 600;
+}
+
+.irteze-cart {
+background: #c9a96e;
+color: #0b0b0b !important;
+border-color: #c9a96e;
+transform: translateY(-2px);
+}
+</style>
+</body>
+</html>

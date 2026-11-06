@@ -1,0 +1,726 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | IRTEZÉ</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+<header style="background:#0b0b0b; border-bottom:1px solid #c9a96e;">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html"
+               style="color:#c9a96e; font-size:28px; letter-spacing:4px;">
+                IRTEZÉ
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#irtezeNavbar"
+                    aria-controls="irtezeNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    style="border-color:#c9a96e;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="irtezeNavbar">
+                <ul class="navbar-nav mx-auto gap-lg-3 text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="men.html">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="women.html">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="unisex.html">Unisex</a></li>
+                    <li class="nav-item"><a class="nav-link" href="new-arrivals.html">New Arrivals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sale.html">Sale</a></li>
+                </ul>
+
+                <div class="d-flex justify-content-center align-items-center gap-3 mt-3 mt-lg-0">
+                    <a href="shop.html" aria-label="Search"
+                       style="color:#c9a96e; font-size:21px;">
+                        <i class="bi bi-search"></i>
+                    </a>
+
+                    <a href="wishlist.html" aria-label="Wishlist"
+                       style="color:#c9a96e; font-size:21px; text-decoration:none;">
+                        <i class="bi bi-heart"></i>
+                        <span id="wishlistCount" style="font-size:12px;">0</span>
+                    </a>
+
+                    <a href="cart.html" class="irteze-cart" aria-label="Shopping cart">
+                        <i class="bi bi-cart3"></i>
+                        <span id="cartCount">0</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="checkout-hero">
+        <div class="container">
+            <p class="eyebrow">ALMOST YOURS</p>
+            <h1>Secure <span>Checkout.</span></h1>
+            <p>Complete your details and choose your preferred payment method.</p>
+        </div>
+    </section>
+
+    <section class="checkout-section">
+        <div class="container">
+
+            <form id="checkoutForm">
+                <div class="row g-5">
+
+                    <div class="col-lg-7">
+
+                        <div class="checkout-card">
+                            <p class="eyebrow">STEP 01</p>
+                            <h2>Delivery Information</h2>
+
+                            <div class="row g-3">
+
+                                <div class="col-md-6">
+                                    <label for="fullName">Full Name *</label>
+                                    <input type="text" id="fullName" name="customer_name" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="customer_email" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="customer_phone" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="address">Complete Delivery Address *</label>
+                                    <textarea id="address" name="address" rows="3" required></textarea>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="postalCode">Postal Code</label>
+                                    <input type="text" id="postalCode" name="postal_code">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="orderNotes">Order Notes (Optional)</label>
+                                    <input type="text" id="orderNotes" name="order_notes"
+                                           placeholder="Any delivery instructions">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="checkout-card payment-card">
+                            <p class="eyebrow">STEP 02</p>
+                            <h2>Payment Method</h2>
+                            <p class="section-description">
+                                Select one of the available payment options.
+                            </p>
+
+                            <label class="payment-option">
+                                <input type="radio" name="payment_method"
+                                       value="Cash on Delivery" required>
+                                <span>
+                                    <strong>Cash on Delivery</strong>
+                                    <small>Pay when your order arrives.</small>
+                                </span>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="payment_method"
+                                       value="Bank Transfer">
+                                <span>
+                                    <strong>Bank Transfer</strong>
+                                    <small>
+                                        Transfer payment using the bank details provided by the store.
+                                    </small>
+                                </span>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="payment_method"
+                                       value="JazzCash">
+                                <span>
+                                    <strong>JazzCash</strong>
+                                    <small>Use the store's JazzCash account details.</small>
+                                </span>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="payment_method"
+                                       value="Easypaisa">
+                                <span>
+                                    <strong>Easypaisa</strong>
+                                    <small>Use the store's Easypaisa account details.</small>
+                                </span>
+                            </label>
+
+                            <div id="paymentInstructions" class="payment-instructions">
+                                Select a payment method to see its instructions.
+                            </div>
+
+                            <div id="transactionArea" style="display:none;">
+                                <label for="transactionId">
+                                    Transaction ID / Reference (if paid)
+                                </label>
+
+                                <input type="text" id="transactionId"
+                                       name="transaction_id"
+                                       placeholder="Enter transaction reference">
+
+                                <p class="small-note">
+                                    Submitting a reference does not verify payment.
+                                    The store must confirm the transaction.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="order-summary">
+
+                            <p class="eyebrow">YOUR ORDER</p>
+                            <h2>Order Summary</h2>
+
+                            <div id="checkoutItems"></div>
+
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span id="subtotal">Rs. 0</span>
+                            </div>
+
+                            <div class="summary-row">
+                                <span>Delivery</span>
+                                <span id="delivery">Rs. 0</span>
+                            </div>
+
+                            <div class="summary-row total-row">
+                                <strong>Total</strong>
+                                <strong id="total">Rs. 0</strong>
+                            </div>
+
+                            <button type="submit" id="placeOrder"
+                                    class="place-order-button">
+                                PLACE ORDER
+                            </button>
+
+                            <p class="privacy-note">
+                                Please check your contact and delivery details
+                                before placing your order.
+                            </p>
+
+                            <a href="cart.html" class="back-link">
+                                ← Return to Shopping Bag
+                            </a>
+
+                            <p id="checkoutMessage" role="status"></p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+
+        </div>
+    </section>
+</main>
+
+<footer style="background:#0b0b0b; color:#f5f0e8; border-top:1px solid #c9a96e; padding:50px 0 20px;">
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+                <h3 style="color:#c9a96e; letter-spacing:4px;">IRTEZÉ</h3>
+                <p style="color:#aaa39a;">A Signature Beyond Scent.</p>
+                <p style="color:#aaa39a;">
+                    Discover fragrances that express your personality
+                    and leave a lasting impression.
+                </p>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <h5 style="color:#c9a96e;">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html">Home</a></li>
+                    <li class="mb-2"><a href="shop.html">Shop</a></li>
+                    <li class="mb-2"><a href="about.html">About Us</a></li>
+                    <li class="mb-2"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 style="color:#c9a96e;">Customer Care</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="cart.html">Shopping Bag</a></li>
+                    <li class="mb-2"><a href="wishlist.html">My Wishlist</a></li>
+                    <li class="mb-2"><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 style="color:#c9a96e;">Get in Touch</h5>
+
+                <p style="color:#aaa39a; margin-bottom:8px;">
+                    <i class="bi bi-envelope me-2"></i> your-email@example.com
+                </p>
+
+                <p style="color:#aaa39a;">
+                    <i class="bi bi-telephone me-2"></i> +92 XXX XXXXXXX
+                </p>
+
+                <div class="d-flex gap-3">
+                    <a href="#" aria-label="Instagram" style="font-size:20px;">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook" style="font-size:20px;">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="#" aria-label="TikTok" style="font-size:20px;">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr style="border-color:#444; margin-top:35px;">
+
+        <div class="text-center" style="color:#aaa39a; font-size:14px;">
+            &copy; <span id="footerYear"></span> IRTEZÉ. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    // =========================================
+    // EMAILJS SETTINGS
+    // =========================================
+
+    const EMAILJS_PUBLIC_KEY = "RebW4zuMvyCwMRP5E";
+    const EMAILJS_SERVICE_ID = "service_hb2r4h3";
+    const EMAILJS_TEMPLATE_ID = "template_uwf2adr";
+
+    // Yahan apni shop ka asli inbox email likhein
+    const STORE_EMAIL = "irtezaa211@gmail.com";
+
+    emailjs.init({
+        publicKey: EMAILJS_PUBLIC_KEY
+    });
+
+
+    // =========================================
+    // FOOTER YEAR
+    // =========================================
+
+    $("#footerYear").text(new Date().getFullYear());
+
+
+    // =========================================
+    // CART SUMMARY
+    // =========================================
+
+    let cart = [];
+
+    try {
+        cart = JSON.parse(localStorage.getItem("irtezeCart")) || [];
+    } catch (error) {
+        console.error("Cart loading error:", error);
+        cart = [];
+    }
+
+    let subtotal = 0;
+    let itemCount = 0;
+
+    cart.forEach(function (item) {
+        let quantity = Number(item.quantity) || 1;
+        let price = Number(item.price) || 0;
+
+        subtotal += price * quantity;
+        itemCount += quantity;
+
+        const itemRow = $("<div>").addClass("checkout-item");
+        $("<span>").text((item.name || "Product") + " × " + quantity).appendTo(itemRow);
+        $("<strong>").text("Rs. " + (price * quantity).toLocaleString("en-PK")).appendTo(itemRow);
+        $("#checkoutItems").append(itemRow);
+    });
+
+    $("#cartCount").text(itemCount);
+
+    let delivery = cart.length > 0 ? 250 : 0;
+    let total = subtotal + delivery;
+
+    $("#subtotal").text("Rs. " + subtotal.toLocaleString("en-PK"));
+    $("#delivery").text("Rs. " + delivery.toLocaleString("en-PK"));
+    $("#total").text("Rs. " + total.toLocaleString("en-PK"));
+
+
+    // =========================================
+    // PAYMENT INSTRUCTIONS
+    // =========================================
+
+    const paymentDetails = {
+        "Cash on Delivery":
+            "Pay in cash when your order is delivered. Please keep the total amount ready.",
+
+        "Bank Transfer":
+            "Bank: YOUR BANK NAME | Account Title: YOUR ACCOUNT TITLE | Account/IBAN: YOUR ACCOUNT NUMBER. Replace these placeholders with your real business details.",
+
+        "JazzCash":
+            "JazzCash Account Title: YOUR ACCOUNT TITLE | Account Number: YOUR JAZZCASH NUMBER. Replace these placeholders with your real business details.",
+
+        "Easypaisa":
+            "Easypaisa Account Title: YOUR ACCOUNT TITLE | Account Number: YOUR EASYPAISA NUMBER. Replace these placeholders with your real business details."
+    };
+
+    $('input[name="payment_method"]').on("change", function () {
+        let method = $(this).val();
+
+        $("#paymentInstructions").text(paymentDetails[method]);
+        $("#transactionArea").toggle(method !== "Cash on Delivery");
+    });
+
+
+    // =========================================
+    // PLACE ORDER AND SEND EMAIL
+    // =========================================
+
+    $("#checkoutForm").on("submit", async function (event) {
+        event.preventDefault();
+
+        const message = $("#checkoutMessage");
+        const button = $("#placeOrder");
+
+        message.text("");
+
+        if (cart.length === 0) {
+            message.text("Your shopping bag is empty. Please add a product first.");
+            return;
+        }
+
+        if (!$("#checkoutForm")[0].checkValidity()) {
+            $("#checkoutForm")[0].reportValidity();
+            return;
+        }
+
+        if (!STORE_EMAIL || STORE_EMAIL === "YOUR_STORE_EMAIL@example.com") {
+            message.text("Please enter your real store email in the STORE_EMAIL setting.");
+            return;
+        }
+
+        button.prop("disabled", true).text("SENDING ORDER...");
+
+        const order = {
+            orderNumber: "IRZ-" + Date.now(),
+            customerName: $("#fullName").val().trim(),
+            customerEmail: $("#email").val().trim(),
+            customerPhone: $("#phone").val().trim(),
+            city: $("#city").val().trim(),
+            address: $("#address").val().trim(),
+            postalCode: $("#postalCode").val().trim(),
+            notes: $("#orderNotes").val().trim(),
+            paymentMethod: $('input[name="payment_method"]:checked').val(),
+            transactionId: $("#transactionId").val().trim(),
+            items: cart,
+            subtotal: subtotal,
+            delivery: delivery,
+            total: total,
+            date: new Date().toLocaleString()
+        };
+
+        const productsList = cart.map(function (item) {
+            let quantity = Number(item.quantity) || 1;
+            let price = Number(item.price) || 0;
+
+            return `${item.name || "Product"} x ${quantity} = Rs. ${(price * quantity).toLocaleString("en-PK")}`;
+        }).join("\n");
+
+        // Your supplied EmailJS template uses:
+        // {{name}}, {{time}}, {{message}}
+
+        const orderMessage = `
+NEW IRTEZÉ ORDER
+
+Order Number: ${order.orderNumber}
+Order Date: ${order.date}
+
+CUSTOMER DETAILS
+Name: ${order.customerName}
+Email: ${order.customerEmail}
+Phone: ${order.customerPhone}
+City: ${order.city}
+Address: ${order.address}
+Postal Code: ${order.postalCode}
+
+ORDER PRODUCTS
+${productsList}
+
+PAYMENT DETAILS
+Payment Method: ${order.paymentMethod}
+Transaction ID: ${order.transactionId || "Not provided"}
+
+ORDER TOTAL
+Subtotal: Rs. ${subtotal.toLocaleString("en-PK")}
+Delivery: Rs. ${delivery.toLocaleString("en-PK")}
+Total: Rs. ${total.toLocaleString("en-PK")}
+
+Order Notes: ${order.notes || "None"}
+        `.trim();
+
+        // Parameters matching your EmailJS template HTML
+        const templateParams = {
+            to_email: STORE_EMAIL,
+            name: order.customerName,
+            time: order.date,
+            message: orderMessage,
+            customer_email: order.customerEmail
+        };
+
+        try {
+            const response = await emailjs.send(
+                EMAILJS_SERVICE_ID,
+                EMAILJS_TEMPLATE_ID,
+                templateParams
+            );
+
+            console.log("EmailJS response:", response);
+
+            if (response.status !== 200) {
+                throw new Error("EmailJS did not confirm the email.");
+            }
+
+            // Save order only after successful email response
+            localStorage.setItem(
+                "irtezeLastOrder",
+                JSON.stringify(order)
+            );
+
+            // Clear cart after successful order email
+            localStorage.removeItem("irtezeCart");
+
+            message.text("Your order has been sent successfully!");
+
+            window.location.href = "order-success.html";
+
+        } catch (error) {
+            console.error("EmailJS Error:", error);
+
+            message.text(
+                "Email could not be sent: " +
+                (error.text || error.message || "Please check your EmailJS settings.")
+            );
+
+            button.prop("disabled", false).text("PLACE ORDER");
+        }
+    });
+
+</script>
+
+<style>
+/* HEADER */
+
+header {
+    background: #0b0b0b;
+    border-bottom: 1px solid rgba(201, 169, 110, 0.35);
+}
+
+header .navbar {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+header .navbar-brand {
+    color: #c9a96e !important;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    transition: color 0.3s ease;
+}
+
+header .navbar-brand:hover {
+    color: #f5f0e8 !important;
+}
+
+/* NAV LINKS */
+
+header .navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    color: #f5f0e8 !important;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    padding: 10px 0 !important;
+    margin: 0 9px;
+    transition: color 0.3s ease;
+}
+
+header .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 0;
+    height: 2px;
+    background: #c9a96e;
+    transition: width 0.3s ease;
+}
+
+header .navbar-nav .nav-link:hover,
+header .navbar-nav .nav-link:focus,
+header .navbar-nav .nav-link.active {
+    color: #c9a96e !important;
+}
+
+header .navbar-nav .nav-link:hover::after,
+header .navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+/* HEADER ICONS */
+
+header a[aria-label="Search"],
+header a[aria-label="Wishlist"],
+header a[aria-label="Shopping cart"] {
+    color: #c9a96e !important;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header a[aria-label="Search"]:hover,
+header a[aria-label="Wishlist"]:hover,
+header a[aria-label="Shopping cart"]:hover {
+    color: #f5f0e8 !important;
+    transform: translateY(-2px);
+}
+
+/* MOBILE MENU */
+
+header .navbar-toggler {
+    border: 1px solid #c9a96e;
+    box-shadow: none !important;
+}
+
+header .navbar-toggler:focus {
+    box-shadow: 0 0 0 2px rgba(201, 169, 110, 0.2) !important;
+}
+
+@media (max-width: 991px) {
+    header .navbar-collapse {
+        padding-top: 18px;
+    }
+
+    header .navbar-nav .nav-link {
+        margin: 4px 0;
+    }
+
+    header .navbar-nav .nav-link::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header .navbar-nav .nav-link:hover::after,
+    header .navbar-nav .nav-link.active::after {
+        width: 35px;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background: #0b0b0b !important;
+    color: #f5f0e8;
+    border-top: 1px solid rgba(201, 169, 110, 0.4);
+}
+
+footer h3,
+footer h5 {
+    color: #c9a96e !important;
+    margin-bottom: 18px;
+}
+
+footer p {
+    line-height: 1.8;
+}
+
+footer a {
+    color: #aaa39a !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #c9a96e !important;
+}
+
+footer .bi-instagram,
+footer .bi-facebook,
+footer .bi-tiktok {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover .bi-instagram,
+footer a:hover .bi-facebook,
+footer a:hover .bi-tiktok {
+    color: #f5f0e8;
+}
+
+footer hr {
+    border-color: rgba(201, 169, 110, 0.3) !important;
+}
+
+footer #footerYear {
+    color: #c9a96e;
+}
+
+/* CART */
+
+.irteze-cart {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #0b0b0b !important;
+    border: 1px solid #c9a96e;
+    border-radius: 50%;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    background: #c9a96e;
+    transform: translateY(-2px);
+}
+
+.irteze-cart i {
+    font-size: 19px;
+}
+
+.irteze-cart #cartCount {
+    font-size: 11px;
+    font-weight: 600;
+}
+</style>
+
+</body>
+</html>
